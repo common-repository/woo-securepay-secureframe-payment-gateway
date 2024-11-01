@@ -1,0 +1,33 @@
+/*add style for secureframe here*/
+#payment_box_method_securepay_new_card{
+    padding-left: 30px;
+    display: none;
+}
+#payment .payment_method_securepayframe input[type=radio]:first-child{
+        clip: rect(1px,1px,1px,1px);
+    position: absolute!important;
+}
+
+#payment .payment_method_securepayframe label{
+    display: block;
+    padding: 1.387em;
+    cursor: pointer;
+}
+#payment .payment_method_securepayframe input[type=radio]+label:before{
+display: inline-block;
+    font: normal normal normal 1em/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; 
+    margin-right: .53em;
+    -webkit-transition: color,ease,.2s;
+    -moz-transition: color,ease,.2s;
+    transition: color,ease,.2s;
+        content: "\f10c";
+}
+#payment .payment_method_securepayframe input[type=radio]:checked+label:before{
+        content: "\f192";
+        color: #96588a;
+            
+}
